@@ -1,4 +1,4 @@
-This code demonstrates a semi-supervised learning approach on the MNIST dataset using a combination of unsupervised pre-training with an autoencoder and subsequent supervised training of a classifier. Let's break down the main components and their theoretical aspects:
+This code demonstrates a self-supervised learning approach on the MNIST dataset using a combination of unsupervised pre-training with an autoencoder and subsequent supervised training of a classifier. Let's break down the main components and their theoretical aspects:
 
 ### 1. Data Loading and Preprocessing:
 - The code downloads and preprocesses the MNIST dataset, creating a semi-supervised scenario by splitting labeled and unlabeled data.
@@ -31,8 +31,6 @@ This code demonstrates a semi-supervised learning approach on the MNIST dataset 
 - The final model is evaluated on the test set to assess its performance.
 
 ### Theoretical Aspects:
-- **Semi-Supervised Learning:** This approach leverages both labeled and unlabeled data, capitalizing on the idea that unlabeled data can provide valuable information for improving model generalization.
-
 - **Autoencoder Pre-training:** Unsupervised pre-training initializes the model in a way that helps it converge faster and potentially reach a better local minimum. It can be particularly useful when labeled data is limited.
 
 - **Transfer Learning:** The encoder of the pre-trained autoencoder is utilized as a feature extractor for the classifier. This concept of transfer learning allows the model to transfer knowledge gained from unsupervised tasks to improve performance on a supervised task.
@@ -45,4 +43,4 @@ This code demonstrates a semi-supervised learning approach on the MNIST dataset 
 
 - **Evaluation:** The model is evaluated on a separate test set to assess its performance and generalization to unseen data.
 
-In summary, this code demonstrates a semi-supervised learning pipeline combining unsupervised pre-training and supervised fine-tuning, showcasing the benefits of leveraging both labeled and unlabeled data for improved model performance.
+In summary, this code demonstrates a self-supervised learning pipeline combining unsupervised pre-training and supervised fine-tuning, showcasing the benefits of leveraging both labeled and unlabeled data for improved model performance.
